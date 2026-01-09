@@ -82,6 +82,7 @@ export PYTHONUNBUFFERED=1
 # https://github.com/docker-library/python/pull/570
 export LANG="en_US.UTF-8"
 export C_INCLUDE_PATH="/app/.heroku/python/include${C_INCLUDE_PATH:+:${C_INCLUDE_PATH}}"
+echo $CPLUS_INCLUDE_PATH
 export CPLUS_INCLUDE_PATH="/app/.heroku/python/include${CPLUS_INCLUDE_PATH:+:${CPLUS_INCLUDE_PATH}}"
 export LIBRARY_PATH="/app/.heroku/python/lib${LIBRARY_PATH:+:${LIBRARY_PATH}}"
 export LD_LIBRARY_PATH="/app/.heroku/python/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
